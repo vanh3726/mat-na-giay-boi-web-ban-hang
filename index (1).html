@@ -33,7 +33,7 @@ details{background:var(--card);border:1px solid var(--line);border-radius:10px;p
 <footer>© Mặt nạ giấy bồi · Hotline <a href="tel:0978835209">0978835209</a> · <a href="mailto:vananhnguyen3726@gmail.com">vananhnguyen3726@gmail.com</a><br><a onclick="go('about')">Giới thiệu</a> · <a onclick="go('ads')">Liên hệ quảng cáo</a></footer>
 <script>
 /* ===== CẤU HÌNH: dán URL Google Apps Script vào API để dùng dữ liệu thật; để trống = chế độ thử trên máy ===== */
-const API='';const DEMO_PW='admin123';const SHIP=30000,FREE=300000;
+const API='https://script.google.com/macros/s/AKfycbxYjUQCuLWxUFd5xROoClS8cWDdPWToAA12SSN5x7PtkJRMCGmHDfO9CYa0MNM54vJ_/exec';const DEMO_PW='admin123';const SHIP=30000,FREE=300000;
 const BANK={bank:'Ngân hàng ABC',no:'0123456789',owner:'TEN CHU TAI KHOAN'};
 const $=s=>document.querySelector(s),vnd=n=>(+n).toLocaleString('vi-VN')+'đ',esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ls={g:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},s:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
